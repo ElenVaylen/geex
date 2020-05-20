@@ -1,5 +1,7 @@
 Use: webpack, pug, scss, animejs
 
+https://elenvaylen.github.io/geex/build/index.html
+
 npm install
 npm start
 
