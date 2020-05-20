@@ -1,0 +1,60 @@
+@import 'fonts';
+@import 'normolize';
+@import 'resets';
+@import 'mixins';
+@import 'variables';
+@import '../components/info-card/info-card';
+@import '../sections/header/header';
+@import '../sections/preview/preview';
+@import '../sections/starting/starting';
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Lucifer Sans', sans-serif;
+  background-color: $bg-body;
+  font-weight: 500;
+  color: #000;
+  max-width: 1920px;
+  min-width: 1007px;
+  line-height: 1.16;
+}
+.wrapper {
+  overflow-x: hidden;
+}
+.container {
+  padding-left: get-vw(210); //210px
+  padding-right: get-vw(210); //210px
+}
+.container-fluid {
+  padding-left: get-vw(30); //30px
+  padding-right: get-vw(30); //30px
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}

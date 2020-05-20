@@ -1,0 +1,17 @@
+mixin menu-item(title, link)
+  .menu__item
+      a.menu__link(href=`${link}`)= title
+
+header.header
+  .container-fluid
+    nav.menu.d-flex.justify-content-between.align-items-center
+      +menu-item('Shamel', '/')
+      +menu-item('Services', '/')
+      a.menu-bar(href='/')
+        .menu-bar__line
+        .menu-bar__line
+        .menu-bar__line
+      +menu-item('About', '/')
+      a.menu-star(href='/')
+        include ../../images/star.svg
+

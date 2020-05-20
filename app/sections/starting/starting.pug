@@ -1,0 +1,34 @@
+include ../../components/info-card/info-card
+
+section.starting
+  .container
+    .starting__wrap.d-flex.justify-content-end
+      .starting__circle
+      .starting__text
+        include ../../images/starting-text.svg
+      .starting__info-card
+        +info-card('./images/starting-card.jpg', 'www.vogue.com', 'Ageing Skin Care Does Chemical Peeling Slow The Aging', '')
+      .starting__photo
+        img(src='./images/starting.jpg' alt='').starting__photo-img
+      .starting__winter
+        include ../../images/winter.svg
+      .starting-center
+        .starting-center__photo.hide
+          img(src='./images/starting-center.jpg' alt='').starting-center__photo-img
+          .starting-center__photo-shape
+            include ../../images/shape.svg
+        .starting-center__wrap
+          .starting-center__shape
+            include ../../images/shape.svg
+          p.starting-center__title
+            span.starting-center__title-black Her modeling career started in 2005 and by 2007 she was walking exclusively for Prada and Miu Miu,
+            = ' '
+            span.starting-center__title-grey in addition to having five editorials in various editions of Vogue Magazine.
+          .starting-center__bot.d-flex.justify-content-between
+            p.starting-center__bot-text
+              span PRADA DUTTI FALL-WINTER
+              span 2018 AD CAMPAIGN
+            p.starting-center__bot-text
+              span Miu Miu DUTTI FALL-summer
+              span 2017 AD CAMPAIGN
+

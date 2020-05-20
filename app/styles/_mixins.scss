@@ -1,0 +1,6 @@
+@function get-vw($value) {
+  $content: 1920;
+  $count: 100 / $content * $value;
+  $result: $count * 1vw;
+  @return $result
+}

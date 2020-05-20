@@ -1,0 +1,65 @@
+.info-card {
+  background: $bg-grey-card;
+  border: 1px solid #000;
+  width: get-vw(468); //468px
+  .starting__info-card & {
+    width: get-vw(418);
+  }
+  &__wrap {
+    padding: get-vw(20) get-vw(26); //20px 26px
+    position: relative;
+    text-decoration: none;
+    color: #000;
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+  }
+  &__img {
+    img {
+      width: get-vw(154); //154px
+      .starting__info-card & {
+        width: get-vw(146);
+      }
+    }
+  }
+  &__icon {
+    display: inline-flex;
+    position: absolute;
+    top: get-vw(8); //8px
+    right: get-vw(8); //8px
+  }
+  .shape {
+    width: get-vw(18);
+    height: get-vw(17);
+    .preview__info-card & {
+      width: get-vw(28); //28px
+      height: get-vw(29); // 29px
+    }
+  }
+  &__content {
+    padding-left: get-vw(30); //30px
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: get-vw(20); //20px
+    font-family: $font-second;
+    font-weight: 600;
+    &-top {
+      color: $grey-primary;
+      font-size: get-vw(18);
+      .preview__info-card & {
+        font-size: get-vw(15);
+      }
+    }
+    &-bot {
+      font-size: get-vw(18); //18px
+      text-transform: uppercase;
+    }
+  }
+}

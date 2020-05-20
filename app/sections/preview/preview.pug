@@ -1,0 +1,36 @@
+include ../../components/info-card/info-card
+
+section.preview
+  include side-links
+  .container
+    .preview__wrap.d-flex.justify-content-end
+      .preview-params
+        .preview-params__item
+          p.preview-params__item-for MODEL
+          p.preview-params__item-text SUVI KOPONEN
+        .preview-params__item
+          p.preview-params__item-for PHOTOGRAPHER
+          p.preview-params__item-text MELANIE + RAMON
+        .preview-params__item
+          p.preview-params__item-for MAKEUP
+          p.preview-params__item-text JORDI FONTANALS
+      .preview-title.preview-title__1
+        include ../../images/suvi.svg
+      .preview-title.preview-title__2
+        include ../../images/kopon.svg
+      .preview-img__1
+        img(src='./images/preview1.jpg' alt='').preview-img__1-img
+      .preview-img__2
+        img(src='./images/preview2.jpg' alt='').preview-img__2-img
+      .preview-img__3
+        div.preview-note.d-flex
+          p.preview-note__text PARIS
+          p.preview-note__date 2019
+        img(src='./images/preview3.jpg' alt='').preview-img__3-img
+        .preview-img__desc
+          .preview-img__desc-line
+          .preview-img__desc-text
+            p MASSIMO DUTTI FALL-WINTER
+            p 2019 AD CAMPAIGN
+        .preview__info-card
+          +info-card('./images/info-card.jpg', 'Helen Keller A Teller And A Seller', 'The 6 Step Non Surgical Facial Rejuvenation Program', '')

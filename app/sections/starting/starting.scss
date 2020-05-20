@@ -1,0 +1,122 @@
+.starting {
+  padding-top: get-vw(59);
+  padding-bottom: get-vw(130);
+  &__wrap {
+    position: relative;
+  }
+  &__circle {
+    width: get-vw(1156); //1156px;
+    height: get-vw(1198); //1198px;
+    opacity: 0.1;
+    background-color: $primary;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  &__photo {
+    padding-top: get-vw(149);
+    &-img {
+      width: get-vw(800);
+      height: get-vw(1067);
+    }
+  }
+  &__text {
+    margin-top: get-vw(24);
+    position: absolute;
+    top: 0;
+    left: 0;
+    svg {
+      width: get-vw(636);
+      height: get-vw(1147);
+    }
+  }
+  &__winter {
+    position: absolute;
+    right: get-vw(-209);
+    bottom: get-vw(-110);
+    svg {
+      width: get-vw(929);
+      height: get-vw(322);
+    }
+  }
+}
+.starting__info-card {
+  position: absolute;
+  bottom: get-vw(-60);
+  left: 0;
+  z-index: 2;
+}
+.starting-center {
+  position: absolute;
+  top: get-vw(387);
+  left: get-vw(279);
+  &__wrap {
+    border: 1px solid #000;
+    width: get-vw(695);
+    height: get-vw(499);
+    background-color: $bg-grey-card;
+    padding: get-vw(24) get-vw(74) get-vw(28) get-vw(48);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__shape {
+    position: absolute;
+    top: get-vw(8);
+    right: get-vw(8);
+    cursor: pointer;
+  }
+  .shape {
+    width: get-vw(36);
+    height: get-vw(35);
+  }
+  &__title {
+    font-size: get-vw(34);
+    font-weight: 300;
+    padding-right: get-vw(75);
+    &-grey {
+      color: $grey-primary;
+    }
+  }
+  &__bot {
+    text-transform: uppercase;
+    font-family: $font-second;
+    font-size: get-vw(18);
+    span {
+      display: block;
+    }
+  }
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    &.hide {
+      width: 0;
+    }
+    &-img {
+      width: get-vw(695);
+      height: get-vw(499);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      max-width: inherit;
+    }
+    &-shape {
+      transform: scale(-1);
+      position: absolute;
+      bottom: get-vw(8);
+      left: get-vw(8);
+      cursor: pointer;
+    }
+  }
+}

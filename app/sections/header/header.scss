@@ -1,0 +1,69 @@
+$transition-menu: 0.2s;
+
+.header {
+  background-color: #fff;
+}
+.menu {
+  height: get-vw(100); //100px
+  &__link {
+    font-size: get-vw(21); //21px
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      transition: $transition-menu;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+  &-star {
+    transition: $transition-menu;
+    svg {
+      width: get-vw(36);
+      height: get-vw(36);
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &-bar {
+    transition: $transition-menu;
+    &:hover {
+      .menu-bar__line:nth-child(2) {
+        margin: 8px 0;
+      }
+    }
+    &__line {
+      width: get-vw(48); //48px
+      background-color: #000;
+      &:nth-child(1) {
+        height: 2px;
+      }
+      &:nth-child(2) {
+        height: 1px;
+        margin: 4px 0;
+        transition: $transition-menu;
+        @media(max-width: $media-1280) {
+          margin: 2px 0;
+        }
+      }
+      &:nth-child(3) {
+        height: 3px;
+        @media(max-width: $media-1280) {
+          height: 2px;
+        }
+      }
+    }
+  }
+}

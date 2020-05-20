@@ -1,0 +1,55 @@
+.side-links {
+  position: absolute;
+  top: 0;
+  left: get-vw(30); //30px
+  padding-top: get-vw(88); //88px
+  &__svg {
+    stroke: #000;
+    stroke-width: 0.2px;
+    fill: #fff;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    margin-bottom: get-vw(280); //280px
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      .side-links__svg {
+        fill: #000;
+      }
+    }
+    &-1 {
+      .side-links__svg {
+        width: get-vw(25); // 25px
+        height: get-vw(136); // 136px
+      }
+    }
+    &-2 {
+      .side-links__svg {
+        width: get-vw(26); // 26px
+        height: get-vw(114); // 114px
+      }
+    }
+    &-3 {
+      .side-links__svg {
+        width: get-vw(26); // 26px
+        height: get-vw(130); // 130px
+      }
+    }
+    &-text {
+      display: block;
+    }
+    &-icon {
+      position: absolute;
+      top: get-vw(-23);
+      right: 0;
+      svg {
+        width: get-vw(12); //12px
+        height: get-vw(12); //12px
+        fill: #000;
+      }
+    }
+  }
+}

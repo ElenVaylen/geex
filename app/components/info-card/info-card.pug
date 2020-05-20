@@ -1,0 +1,11 @@
+mixin info-card(img, textTop, textBot, link)
+  .info-card
+    .info-card__wrap.d-flex
+      a(href=`./${link}`).info-card__link
+      .info-card__icon
+        include ../../images/shape.svg
+      .info-card__img.col-auto
+        img(src=img alt="")
+      .info-card__content.col
+        p.info-card__content-top= textTop
+        p.info-card__content-bot= textBot

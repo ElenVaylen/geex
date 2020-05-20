@@ -1,0 +1,13 @@
+extends includes/default
+
+block variables
+  - var title = "geex"
+  - var main = true
+
+block content
+  .content
+    include ./sections/header/header
+    main.main
+      include ./sections/preview/preview
+      include ./sections/starting/starting
+  include ./sections/footer/footer
